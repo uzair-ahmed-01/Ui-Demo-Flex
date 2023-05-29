@@ -1,0 +1,272 @@
+body {
+  margin: 0px;
+}
+
+*{
+    scroll-behavior:smooth;
+}
+/*--------------------NAVBAR-----------------------*/
+
+nav {
+  height: 4vmax;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.546);
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  background-color: white;
+}
+
+.leftnav {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.leftnav > a {
+  text-decoration: none;
+  color: crimson;
+  font-weight: 700;
+  font-size: 2vmax;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.midnav {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+
+.midnav > a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1, 4vmax;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.midnav > a:hover {
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+
+.rightnav {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.rightnav > img {
+  width: 2.5vmax;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+/*-------------------HOME------------------------*/
+
+#home {
+  height: 90vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(188, 188, 223),
+    rgb(220, 227, 228)
+  );
+  display: flex;
+}
+
+.container {
+  width: 100%;
+}
+
+#rightcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#rightcontainer > img {
+  margin-right: 7vmax;
+  filter: drop-shadow(0px 0px 20px black);
+  
+}
+
+
+
+#leftcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax;
+  box-sizing: border-box;
+  justify-content: center;
+  z-index: 2;
+}
+
+#leftcontainer > h1 {
+  font-size: 5vmax;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#leftcontainer > h2 {
+  margin-top: -10%;
+  font-size: 2vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#leftcontainer > p {
+  margin-left: 2%;
+  font-size: 1.2vmax;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#leftcontainer > button {
+  color: white;
+  border: none;
+  background-color: crimson;
+  border-radius: 20px;
+  width: 10vmax;
+  padding: 0.5vmax;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#leftcontainer > button:hover {
+  background-color: rgb(187, 18, 52);
+}
+
+
+/*-------------------PRODUCTS-----------------------*/
+
+#products > h1 {
+  color: black;
+  border-bottom: 2px solid crimson;
+  font-size: 2.5vmax;
+  text-align: center;
+  margin: 5vmax auto;
+  padding: 1vmax;
+  width: 25vw;
+}
+
+.productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
+  height: 100%;
+  margin: auto;
+ 
+}
+
+.product {
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 30vmax;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1vmax;
+}
+
+.product > img {
+    width: 19vmax;
+}
+
+.product > h4 {
+    margin: 2%;
+}
+
+.product > h5 {
+    margin: 0px ;
+}
+
+.product:hover{
+    transform:translateY(-10px) ;
+}
+
+/*--------------------Footer-----------------------*/
+
+footer{
+    height:20vmax;
+    margin-top: 10vmax;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    color: white;
+    padding: 2vmax;
+}
+
+.leftfooter{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftfooter > img{
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+}
+
+.leftfooter > h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.leftfooter > p{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.midfooter{
+  
+    width: 60%;
+    text-align: center;
+}
+
+.midfooter > h1{
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+}
+
+.midfooter > p{
+    max-width: 60%;
+    margin: 1vmax auto;
+}
+
+.rightfooter{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightfooter > h4{
+    font-size: 2vmax;
+    border-bottom:2px solid white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rightfooter > a{
+    font-size: 1.3vmax;
+    text-decoration: none;
+    color: white;
+    margin: 0.5vmax;
+}
+
+
+
+
+
+
+
+
+
+
+
+
